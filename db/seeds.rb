@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+if Product.count.zero? && Rails.env.development?
+  10.times do |i|
+    Product.create!(
+      name: "Product #{i}",
+      price: 1000 + i,
+      description: "Description #{i}"
+    )
+  end
+end
