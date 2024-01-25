@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para poder usar el API es necesario crear un token, esto es algo muy simple, has una call al enpoint:
 
-Things you may want to cover:
+POST
+```/tokens```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+guarda el token value en el ```.env.local``` de la fontend NextJS app como ```TOKEN=token```
